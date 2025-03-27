@@ -1,8 +1,10 @@
+import { ArrowUp } from 'lucide-react'
+
 export default function MainContent() {
   return (
     <>
-      <main className='flex grow flex-col px-4 pb-4'>
-        <div className='grow overflow-auto'>
+      <main className='flex flex-grow flex-col overflow-hidden'>
+        <div className='flex-grow overflow-auto px-6 pb-4'>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Voluptatibus, odit illo. Sed error suscipit cum accusamus laudantium
@@ -35,13 +37,19 @@ export default function MainContent() {
             soluta.
           </p>
         </div>
-        <div className=''>
+        <div className='flex px-6 py-4 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]'>
           <input
-            className='border-input file:text-foreground placeholder:text-muted-foreground focus-visible:ring-ring flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-1 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm'
+            className='w-full rounded-md border p-2 focus-visible:outline-none'
             type='text'
             name=''
             id=''
+            placeholder='Ask anything'
           />
+          <div className='flex items-center'>
+            <button className='ml-2 rounded-full bg-black p-1'>
+              <ArrowUp color='white' />
+            </button>
+          </div>
         </div>
       </main>
     </>

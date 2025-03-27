@@ -4,7 +4,7 @@ import { SquarePen } from 'lucide-react'
 export default function Header() {
   return (
     <>
-      <header className='grid grid-cols-3 border-b border-b-gray-200 p-4'>
+      <header className='grid grid-cols-3 border-b border-b-gray-200 p-6'>
         <div className='flex'>
           <button className='cursor-pointer'>
             <Menu />
