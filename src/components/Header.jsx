@@ -42,7 +42,7 @@ export default function Header() {
                 <p>Subir repo a GitHub Subir repo a GitHub</p>
               </li>
               <li>
-                <a href=''>Distribucion gastos vacaciones</a>
+                <a href=''>Division gastos vacaciones</a>
               </li>
             </ul>
           </div>
