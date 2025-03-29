@@ -37,7 +37,7 @@ export default function MainContent() {
             soluta.
           </p>
         </div>
-        <div className='flex px-6 py-4 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]'>
+        <div className='flex px-6 py-2 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]'>
           <input
             className='w-full rounded-md border p-2 focus-visible:outline-none'
             type='text'
