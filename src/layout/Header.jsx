@@ -16,18 +16,16 @@ export default function Header() {
         <div className='fixed inset-0 z-50 flex'>
           {/* Overlay */}
           <div
-            className='fixed inset-0 z-51 bg-black opacity-30'
+            className='fixed inset-0 z-51 bg-black opacity-15'
             onClick={toggleMenu}
-          >
-            test
-          </div>
+          ></div>
           {/* Lateral Panel */}
-          <div className='z-52 w-80 bg-white px-4 shadow-lg'>
-            <div className='flex justify-between py-4'>
+          <div className='z-52 w-80 bg-white shadow-lg'>
+            <div className='mb-2 flex justify-between px-4 py-4'>
               <button onClick={toggleMenu}>
                 <Menu />
               </button>
-              <div>
+              <div className='flex'>
                 <button className='mr-4'>
                   <Search />
                 </button>
@@ -36,13 +34,19 @@ export default function Header() {
                 </button>
               </div>
             </div>
-            <ul className='space-y-2'>
-              <li className='font-bold'>Yesterday</li>
-              <li className='cursor-pointer rounded-md py-2 hover:bg-gray-500'>
+            <ul className='space-y-2 px-2'>
+              <li className='px-2 text-sm font-bold'>Chats</li>
+              <li className='cursor-pointer rounded-md p-2 text-sm hover:bg-gray-200'>
                 <p>Subir repo a GitHub Subir repo a GitHub</p>
               </li>
-              <li>
-                <a href=''>Division gastos vacaciones</a>
+              <li className='cursor-pointer rounded-md p-2 text-sm hover:bg-gray-200'>
+                <p>Subir repo a GitHub Subir repo a GitHub</p>
+              </li>
+              <li className='cursor-pointer rounded-md p-2 text-sm hover:bg-gray-200'>
+                <p>Subir repo a GitHub Subir repo a GitHub</p>
+              </li>
+              <li className='cursor-pointer rounded-md p-2 text-sm hover:bg-gray-200'>
+                <p>Subir repo a GitHub Subir repo a GitHub</p>
               </li>
             </ul>
           </div>
@@ -61,7 +65,7 @@ export default function Header() {
           <h1 className='text-xl'>LiteGPT</h1>
         </div>
         <div className='flex items-center justify-end'>
-          <button className='cursor-pointer'>
+          <button className='cursor-pointer hover:bg-gray-200'>
             <SquarePen />
           </button>
         </div>
